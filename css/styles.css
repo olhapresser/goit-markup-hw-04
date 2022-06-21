@@ -176,6 +176,13 @@ padding-bottom: 200px;
 
     background-color: var(--background-darkgrey);
 text-align: center;
+
+max-width: 1600px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+url(../images/background1.jpg);
 }
 .main-heading{
     margin-bottom: 30px;
@@ -246,6 +253,35 @@ text-align: center;
 }
 .advantages .text{
     width: 270px;
+}
+
+.advantages .item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-grey);
+
+    margin-bottom: 30px;
+
+}
+
+.icon-antena::before {
+    background-image: url(../images/adv-antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/adv-clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/adv-diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/adv-astronaut.svg);
 }
 
 /*-- -------------------whatdo-----------*/
@@ -324,6 +360,57 @@ text-align: center;
     margin: 30px 50px 10px;
     text-align: center;
 }
+
+.team-icons {
+    display: flex;
+    list-style-type: none;
+    padding: 16px 32px 30px;
+}
+
+.team-icons .item {
+    margin-right: 10px;
+
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+
+}
+
+.team-icons .item:hover {
+    height: 44px;
+    width: 44px;
+    border: none;
+    border-radius: 50%;
+    background-image: url(../images/background-team-icon.png);
+    background-color: var(--accent-color);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: auto auto;}
+
+.team-icons .item:last-child {
+    margin-right: 0px;
+}
+
+.team-icons .icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8
+}
+
+.team-icons .icon:hover {
+    fill: var(--white-color);
+}
+
+.team-icons .link {
+    display: flex;
+    justify-content: center;
+        align-items: center;
+        height: 44px;
+        width: 44px;
+}
+
 
 
     /*-- -------------------Regular Customers---------- --*/
