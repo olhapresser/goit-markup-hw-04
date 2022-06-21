@@ -176,15 +176,7 @@ padding-bottom: 200px;
 
     background-color: var(--background-darkgrey);
 text-align: center;
-
-max-width: 1600px;
-height: 600px;
-margin-left: auto;
-margin-right: auto;
-background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ), url(../images/background1.jpg);
 }
-
-
 .main-heading{
     margin-bottom: 30px;
     margin-left: auto;
@@ -256,34 +248,6 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5
     width: 270px;
 }
 
-.advantages .item::before{
-    display: block;
-    content:"" ;
-    height: 120px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--background-grey);
-
-    margin-bottom: 30px;
-
-}
-
-.icon-antena::before{
-    background-image: url(../images/icons.svg/adv-antenna.svg);
-}
-
-.icon-clock::before{
-    background-image: url(../images/icons.svg/adv-clock.svg);
-}
-
-.icon-diagram::before{
-    background-image: url(../images/icons.svg/adv-diagram.svg);
-}
-
-.icon-astronaut::before{
-    background-image: url(../images/icons.svg/adv-astronaut.svg);
-}
 /*-- -------------------whatdo-----------*/
 .whatdo{
     padding-top: 0px;
@@ -353,6 +317,7 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5
     line-height: calc(19/16);
     text-align: center;
 
+    margin-bottom: 30px;
 }
 
 .team .third-heading{
@@ -360,66 +325,27 @@ background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5
     text-align: center;
 }
 
-.team-icons{
-    display: flex;
-    list-style-type: none;
-    padding: 16px 32px 30px;
-}
 
-.team-icons .item{
-margin-right: 10px;
+    /*-- -------------------Regular Customers---------- --*/
 
-width: 44px;
-height: 44px;
-border: none;
-border-radius: 50%;
-box-shadow: none;
-}
+    .customers .second-heading{
+        margin-top: 94px;
+        margin-bottom: 50px;
+    }
 
-.team-icons .item:hover{
-height: 44px;
-width: 44px;
-border: none;
-border-radius: 50%;
-background-image: url(../images/background-team-icon.png);
-background-color: var(--accent-color);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: auto auto;
+    .customers .list{
+        margin-bottom: 94px;
+display: flex;
+justify-content: center;
+    }
 
-}
+    .customers .item{
+        margin-right: 30px;
+    }
 
-.team-icons .item:last-child {
-    margin-right: 0px;
-}
-
-.team-icons .icon{
-    width: 20px;
-    height: 20px;
-}
-
-.team-icons .link{
-    text-align: center;
-    align-items: center;
-}
-
-/*---------------проверь---------*/
-.team .link{
-    display: inline-block;
-    height: 44px;
-    width: 44px;
-    background-image: url(../images/icons.svg/team-instagram.svg);
-    background-color: var(--white-color);
-    background-size: 44px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-
-.team .link:hover{
-    background-color: var(--accent-color);
-}
-
+    .customers .item:last-child{
+        margin-right: 0px;
+    }
 
 /*------------------------------------FOOTER-----------*/
 .footer{
@@ -460,12 +386,6 @@ color: rgba(255, 255, 255, 0.6);
 /*!!!----------------------------PORTFOLIO------------!!!*/
 
 /*-- ---------------EXAMPLES------- -*/
-
-.examples .container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 .examples h1{
     position: absolute;
@@ -509,7 +429,8 @@ border-radius: 4px;
 }
 
 .examples-buttons{
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
 }
 
 /*----------------Карточки с работами-----------*/
@@ -517,7 +438,6 @@ border-radius: 4px;
 
 .cards-list .item{
     width: 370px;
-    border: 1px solid #EEEEEE;
 
     margin-right: 30px;
     margin-bottom: 30px;
@@ -532,6 +452,7 @@ border-radius: 4px;
 
         .card-info{
         padding: 24px 20px;
+        border: 1px solid #EEEEEE;
         }
 
 .examples .second-heading{
@@ -552,6 +473,7 @@ margin-bottom: 4px;
 
 .examples-list{
     display: flex;
+    justify-content: center;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
