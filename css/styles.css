@@ -369,48 +369,45 @@ url(../images/background1.jpg);
 
 .team-icons .item {
     margin-right: 10px;
-
     width: 44px;
     height: 44px;
-    border: none;
-    border-radius: 50%;
     box-shadow: none;
-
 }
-
-.team-icons .item:hover {
-    height: 44px;
-    width: 44px;
-    border: none;
-    border-radius: 50%;
-    background-image: url(../images/background-team-icon.png);
-    background-color: var(--accent-color);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: auto auto;}
 
 .team-icons .item:last-child {
     margin-right: 0px;
 }
 
+
+.team-icons .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    color: #afb1b8;
+}
+
+.team-icons .link:hover{
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    background-color: var(--accent-color);
+
+    height: 100%;
+    width: 100%;
+}
+
 .team-icons .icon {
     width: 20px;
     height: 20px;
-    fill: #afb1b8
+    fill: currentColor;
 }
 
 .team-icons .icon:hover {
     fill: var(--white-color);
 }
-
-.team-icons .link {
-    display: flex;
-    justify-content: center;
-        align-items: center;
-        height: 44px;
-        width: 44px;
-}
-
 
 
     /*-- -------------------Regular Customers---------- --*/
