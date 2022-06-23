@@ -104,8 +104,8 @@ display: block;
     color: var(--main-text-color);
 }
 
-.header a:hover,
-a:focus {
+.header .link:hover,
+.link:focus {
     color: var(--accent-color);
 }
 
@@ -158,14 +158,45 @@ margin-right: 50px;
     align-items: center;
 }
 
+.contacts-item{
+    display: flex;
+    align-items: center;
+}
+
 .contacts-item .link{
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    color: var(--main-text-color);
 }
 
 .data{
     margin-left: auto;
 }
+
+.icon-envelope{
+    width: 16px;
+    height: 12px;
+margin-right: 10px;
+fill: currentColor;
+}
+
+
+.icon-smartphone{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.data .link:hover{
+color: var(--accent-color);
+}
+
 
 /*-----------------------------ORDER------------------------*/
 
@@ -375,15 +406,16 @@ margin-bottom: 30px;
     height: 100%;
     width: 100%;
 
-    color: #afb1b8;
-}
-
-.team-icons .link:hover{
     border: none;
     border-radius: 50%;
     box-shadow: none;
-    background-color: var(--accent-color);
 
+    color: #afb1b8;
+}
+
+.team-icons .link:hover , .team-icons .link:focus{
+    background-color: var(--accent-color);
+color: var(--white-color);
     height: 100%;
     width: 100%;
 }
@@ -394,9 +426,6 @@ margin-bottom: 30px;
     fill: currentColor;
 }
 
-.team-icons .icon:hover {
-    fill: var(--white-color);
-}
 
 
     /*-- -------------------Regular Customers---------- --*/
@@ -404,6 +433,11 @@ margin-bottom: 30px;
     .customers .second-heading{
         margin-top: 94px;
         margin-bottom: 50px;
+    }
+
+    .customers .link{
+        width: 100%;
+        height: 100%;
     }
 
     .customers .list{
@@ -414,16 +448,45 @@ justify-content: center;
 
     .customers .item{
         margin-right: 30px;
+        width: 170px;
+        height: 92px;
+
+      border: #AFB1B8 solid 1px;
+      border-radius: 4px;
     }
 
     .customers .item:last-child{
         margin-right: 0px;
     }
 
+    .customers .item:hover{
+        border: var(--accent-color) solid 1px;
+    }
+
+    .customers-icons{
+        fill: #AFB1B8;
+        padding: 16px 32px 16px 32px;
+    }
+
+.customers-icons:hover{
+    fill: var(--accent-color)
+}
+
 /*------------------------------------FOOTER-----------*/
 .footer{
     background-color: var(--background-darkgrey);
 }
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-address{
+    margin-right: 70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 .footer .logo-link{
     color: var(--white-color);
     font-family: 'Raleway';
@@ -448,14 +511,65 @@ color: rgba(255, 255, 255, 0.6);
     margin-bottom: 0;
 }
 
-.footer{
-   padding-top: 60px;
-   padding-bottom: 60px;
-}
 
 .footer .list{
     margin-top: 20px;
 }
+
+.footer .second-heading{
+    color: var(--white-color);
+
+    font-family: Roboto; 
+    font-style: Bold;
+    font-size: 14px ;
+    line-height: calc(16/14);
+
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-join{
+    margin-top: 72px;
+}
+
+.footer-join .list{
+
+    display: flex;
+}
+
+.footer-join .item{
+width: 44px;
+height: 44px;
+margin-right: 10px;
+background-color: rgba(255, 255, 255, 0.1);
+
+border: none;
+border-radius: 50%;
+box-shadow: none;
+}
+
+.footer-join .item:last-child {
+    margin-right: 0px;
+}
+
+.footer-join .item:hover{
+    background-color: var(--accent-color);
+}
+
+.footer-icon{
+    fill: var(--white-color);
+    width: 20px;
+    height: 20px;
+}
+
+.footer-join a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 /*!!!----------------------------PORTFOLIO------------!!!*/
 
 /*-- ---------------EXAMPLES------- -*/
