@@ -443,8 +443,6 @@ color: var(--white-color);
         display: flex;
         justify-items: center;
         align-items: center;
-        align-content: center;
-
         fill: #AFB1B8;
     }
 
@@ -476,8 +474,8 @@ justify-content: center;
     }
 
     .icon-customer1, .icon-customer2, .icon-customer3,.icon-customer4, .icon-customer5, .icon-customer6{
-    max-width: 170px;
-    max-height: 82px;
+    width: 106px;
+    height: 60px;
     }
 
 /*------------------------------------FOOTER-----------*/
