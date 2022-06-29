@@ -441,7 +441,7 @@ color: var(--white-color);
         height: 100%;
 
         display: flex;
-        justify-items: center;
+        justify-content: center;
         align-items: center;
         fill: #AFB1B8;
     }
