@@ -7,6 +7,8 @@
     --background-darkgrey: #2F303A;
     --footer-grey--:rgba(255, 255, 255, 0.6);
     --border-line: #ECECEC;
+    --icon-colour: #AFB1B8;
+
 
     }
     
@@ -169,6 +171,20 @@
             margin-left: auto;
         }
 
+        .icon-envelope{
+            width: 16px;
+            height: 12px;
+        margin-right: 10px;
+        fill: currentColor;
+        }
+        
+        
+        .icon-smartphone{
+            width: 10px;
+            height: 16px;
+            margin-right: 10px;
+            fill: currentColor;
+        }
 
     
     /*-----------------------------ORDER------------------------*/
@@ -180,6 +196,8 @@
         
             background-color: var(--background-darkgrey);
         text-align: center;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url(../images/background1.jpg);
     }
     .main-heading{
 
@@ -259,6 +277,23 @@
     .advantages .text{
         line-height: calc(24/14);
 }
+
+.bck-antena, .bck-clock, .bck-diagram, .bck-astronaut{
+    background-color: var(--background-grey);
+    width: 270px;
+    height: 120px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 30px;
+    }
+    
+    .icon-antena, .icon-clock, .icon-diagram, .icon-astronaut {
+        width: 70px;
+        height:70px;
+    }
     
     /*-- -------------------whatdo-----------*/
     .whatdo{
@@ -341,7 +376,102 @@
         padding-bottom: 30px;
     }
 
+    .team-icons {
+        display: flex;
+        list-style-type: none;
+        margin-bottom:  30px;
+        justify-content: center;
+    }
+    
+    .team-icons .item {
+        margin-right: 10px;
+        width: 44px;
+        height: 44px;
+        box-shadow: none;
+    }
+    
+    .team-icons .item:last-child {
+        margin-right: 0px;
+    }
+    
+    
+    .team-icons .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    
+        border: none;
+        border-radius: 50%;
+        box-shadow: none;
+    
+        color: #afb1b8;
+    }
+    
+    .team-icons .link:hover , .team-icons .link:focus{
+        background-color: var(--accent-color);
+    color: var(--white-color);
+        height: 100%;
+        width: 100%;
+    }
+    
+    .team-icons .icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
 
+
+/*-- -------------------Regular Customers---------- --*/
+
+.customers .second-heading{
+    margin-bottom: 50px;
+}
+
+.customers .link{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--icon-colour);
+}
+
+.customers .link:hover{
+    fill: var(--accent-color)
+}
+
+.customers .list{
+display: flex;
+justify-content: center;
+}
+
+.customers .item{
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+
+  border: var(--icon-colour) solid 1px;
+  border-radius: 4px;
+
+}
+
+.customers .item:last-child{
+    margin-right: 0px;
+}
+
+.customers .item:hover{
+    border: var(--accent-color) solid 1px;
+}
+
+.icon-customer1, .icon-customer2, .icon-customer3,.icon-customer4, .icon-customer5, .icon-customer6{
+width: 106px;
+height: 60px;
+}
+
+    
     
     /*------------------------------------FOOTER-----------*/
     .footer{
@@ -349,7 +479,10 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
+    .footer .container {
+        display: flex;
+    align-items: baseline;
+    }
 
     .footer .item{
         margin-bottom: 9px;
@@ -385,6 +518,59 @@ margin-bottom: 20px;
     
     .footer-link {
     color: var(--footer-grey--);
+    }
+
+
+
+    .footer-join .second-heading{
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        text-align: start;
+
+        color: var(--white-color);
+    }
+
+    .footer-join .list{
+        display: flex;
+    }
+
+    .footer-join .item{
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        background-color: rgba(255, 255, 255, 0.1);
+        
+        border: none;
+        border-radius: 50%;
+        box-shadow: none;  
+    }
+    .footer-join .item:last-child {
+        margin-right: 0px;
+    }
+
+    .footer-join .item:hover{
+        background-color: var(--accent-color);
+    }
+    
+    .footer-icon{
+        fill: var(--white-color);
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-join .link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer-address{
+        margin-right: 70px;
     }
     
     /*!!!----------------------------PORTFOLIO------------!!!*/
@@ -425,6 +611,9 @@ margin-bottom: 20px;
     .examples .button:hover, .examples .button:focus{
         color: var(--white-color);
         background-color: var(--accent-color);
+
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 2px 0px 1px rgba(0, 0, 0, 0.08), 1px 0px 3px rgba(0, 0, 0, 0.1)
+
     }
     
     /*----------------Карточки с работами-----------*/
@@ -449,6 +638,10 @@ margin-bottom: 20px;
             border-left: 1px solid #EEEEEE;
             }
    
+        .cards-list .item:hover, .cards-list .item:focus{
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+            ;
+        }
    
     .examples .second-heading{
         margin-bottom: 4px;
