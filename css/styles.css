@@ -94,7 +94,8 @@
     }
    
     .header .link{
-        display: block;
+        display: flex;
+        align-items: center;
         }
     
     
@@ -193,9 +194,11 @@
         
  padding-top: 200px;
         padding-bottom: 200px;
+        margin: auto;
         
-            background-color: var(--background-darkgrey);
+            background-color: #C4C4C4;
         text-align: center;
+max-width: 1600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 url(../images/background1.jpg);
     }
@@ -437,10 +440,17 @@ url(../images/background1.jpg);
     justify-content: center;
     align-items: center;
     fill: var(--icon-colour);
+
+    height: 92px;
+
+    border: var(--icon-colour) solid 1px;
+    border-radius: 4px;
 }
 
-.customers .link:hover{
-    fill: var(--accent-color)
+.customers .link:hover, .customers .link:focus{
+    fill: var(--accent-color);
+    border-color: var(--accent-color) solid 1px;
+    border-radius: 4px;
 }
 
 .customers .list{
@@ -451,10 +461,6 @@ justify-content: center;
 .customers .item{
     margin-right: 30px;
     width: 170px;
-    height: 92px;
-
-  border: var(--icon-colour) solid 1px;
-  border-radius: 4px;
 
 }
 
@@ -462,9 +468,7 @@ justify-content: center;
     margin-right: 0px;
 }
 
-.customers .item:hover{
-    border: var(--accent-color) solid 1px;
-}
+
 
 .icon-customer1, .icon-customer2, .icon-customer3,.icon-customer4, .icon-customer5, .icon-customer6{
 width: 106px;
@@ -541,17 +545,13 @@ margin-bottom: 20px;
         height: 44px;
         margin-right: 10px;
         margin-bottom: 0px;
-        background-color: rgba(255, 255, 255, 0.1);
         
-        border: none;
-        border-radius: 50%;
-        box-shadow: none;  
     }
     .footer-join .item:last-child {
         margin-right: 0px;
     }
 
-    .footer-join .item:hover{
+    .footer-join .item .link:hover, .footer-join .item .link:focus{
         background-color: var(--accent-color);
     }
     
@@ -567,6 +567,10 @@ margin-bottom: 20px;
         align-items: center;
         height: 100%;
         width: 100%;
+        border: none;
+        border-radius: 50%;
+        box-shadow: none; 
+        background-color: rgba(255, 255, 255, 0.1); 
     }
 
     .footer-address{
@@ -611,9 +615,8 @@ margin-bottom: 20px;
     .examples .button:hover, .examples .button:focus{
         color: var(--white-color);
         background-color: var(--accent-color);
-
-        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 2px 0px 1px rgba(0, 0, 0, 0.08), 1px 0px 3px rgba(0, 0, 0, 0.1)
-
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+;
     }
     
     /*----------------Карточки с работами-----------*/
@@ -638,11 +641,15 @@ margin-bottom: 20px;
             border-left: 1px solid #EEEEEE;
             }
    
-        .cards-list .item:hover, .cards-list .item:focus{
+        .cards-list .link:hover, .cards-list .link:focus{
             box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
             ;
         }
    
+.cards-list .link{
+    display: block;
+}
+
     .examples .second-heading{
         margin-bottom: 4px;
 
